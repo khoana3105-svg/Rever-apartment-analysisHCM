@@ -1,6 +1,6 @@
 # Dữ liệu cục bộ
 
-Notebook đọc file `rever_apartments_clean_fetcher.csv` tại thư mục này. Bản CSV nguồn được sao chép cục bộ từ dự án hiện có để chạy lại, không nằm trong danh sách upload.
+Notebook đọc file `rever_apartments_clean_fetcher.csv` tại thư mục này. Bản CSV nguồn được sao chép cục bộ từ dự án hiện có để chạy lại.
 
 Nguồn: tin đăng căn hộ Rever.vn do tác giả thu thập. Ngày thu thập chưa xác nhận; trường ngày đăng thiếu toàn bộ trong snapshot. Một dòng là một tin đăng, không đảm bảo một căn hộ duy nhất. Dữ liệu đã qua bước làm sạch của bài học phần; notebook DA kiểm tra lại đầu vào sạch chứ không tái dựng HTML/raw.
 
