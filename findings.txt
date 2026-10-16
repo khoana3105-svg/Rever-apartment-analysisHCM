@@ -1,0 +1,6 @@
+Sample: 189 listings; 189 valid for price/area analysis.
+Median asking price: 5.30 billion VND.
+Median unit asking price: 70.00 million VND/m².
+Area/asking-price Spearman correlation: 0.755.
+District comparisons are descriptive, not controlled like-for-like valuations.
+Collection date is unconfirmed; findings describe this saved sample only.

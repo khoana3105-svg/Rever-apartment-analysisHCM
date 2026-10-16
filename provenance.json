@@ -1,0 +1,16 @@
+{
+  "source": "Rever.vn; user-collected saved clean CSV",
+  "collection_date": null,
+  "source_filename": "rever_apartments_clean_fetcher.csv",
+  "sha256": "1f999db2acffcf710bb97ef1713d72794147579310b5819a9a4b1ad97e925003",
+  "eda_execution": "All code cells executed sequentially in one Python namespace; outputs captured; nbformat validated.",
+  "classification_execution": "Existing notebook copied unchanged with historical outputs; not rerun.",
+  "versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2",
+    "scikit-learn": "1.9.1",
+    "seaborn": "0.13.2",
+    "nbformat": "5.11.1"
+  }
+}
