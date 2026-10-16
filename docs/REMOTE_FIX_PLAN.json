@@ -1,0 +1,147 @@
+{
+  "repository": "khoana3105-svg/Rever-apartment-analysisHCM",
+  "branch": "main",
+  "expected_head": "fc51e8480213f267f34e2827d5311e9b1d747aca",
+  "base_tree": "c24ed2d6c6a73afe1cfc825dc83fecc143b154e5",
+  "status": "Prepared locally; GitHub create_tree rejected with 403 Resource not accessible by integration. No remote changes applied.",
+  "tree_elements": [
+    {
+      "path": "01_rever_market_analysis.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": null
+    },
+    {
+      "path": "notebooks/01_rever_market_analysis.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "635c949a6328090956156b26c41cd82f872cf314"
+    },
+    {
+      "path": "Rever_Price_Segment_Classification_Port.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": null
+    },
+    {
+      "path": "notebooks/Rever_Price_Segment_Classification_Port.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9ca3679e8c5e4b94d6876d0cf659f15bad1cb6b"
+    },
+    {
+      "path": "UPLOAD_GUIDE_VI.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": null
+    },
+    {
+      "path": "docs/UPLOAD_GUIDE_VI.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2561fdadb0d7e1552030a3b380341ee17a0a3d78"
+    },
+    {
+      "path": "area_vs_price.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": null
+    },
+    {
+      "path": "outputs/area_vs_price.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9394f67fb2f73ee96a4768d63ce6e8e5da77005d"
+    },
+    {
+      "path": "district_comparison.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": null
+    },
+    {
+      "path": "outputs/district_comparison.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12767d90e13bec16b6c1cdc4b5275d9a9b3d497d"
+    },
+    {
+      "path": "district_summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": null
+    },
+    {
+      "path": "outputs/district_summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec3798872f9e745323f28abd938c8b35fb64eb71"
+    },
+    {
+      "path": "findings.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": null
+    },
+    {
+      "path": "outputs/findings.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "603e9b17c66d40f3d500102a297a80d3a3795c08"
+    },
+    {
+      "path": "price_distributions.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": null
+    },
+    {
+      "path": "outputs/price_distributions.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26b34922646059db32c468f28aaf9fe59fb48064"
+    },
+    {
+      "path": "provenance.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": null
+    },
+    {
+      "path": "docs/provenance.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1339d4c95339f101c9674c592647046f14d4abb8"
+    },
+    {
+      "path": "rever_apartments_clean_fetcher.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": null
+    },
+    {
+      "path": "data/rever_apartments_clean_fetcher.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd221ead8718fef9a34a57e2d284a72f15e42215"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "content": "# Rever Apartment Analysis — Ho Chi Minh City\n\n**Nguyễn Anh Khoa · Python · pandas · Data Visualization**\n\nDự án phân tích mẫu **189 tin đăng căn hộ từ Rever.vn** nhằm mô tả giá chào bán, đơn giá/m², diện tích và độ phủ địa bàn. Đây là dự án cá nhân phục vụ học tập và portfolio Data Analyst; chưa có tác động doanh nghiệp được đo lường.\n\n## Xem nhanh\n\n- [Notebook DA chính — kiểm tra dữ liệu, phân tích và kết luận](notebooks/01_rever_market_analysis.ipynb)\n- [Bảng tổng hợp địa bàn](outputs/district_summary.csv)\n- [Kết quả tóm tắt](outputs/findings.txt)\n- [Phần mở rộng phân loại phân khúc giá](notebooks/Rever_Price_Segment_Classification_Port.ipynb)\n- [Nguồn, fingerprint và môi trường](docs/provenance.json)\n\n## Câu hỏi phân tích\n\n1. Giá chào và đơn giá/m² phân bố ra sao trong mẫu đã thu thập?\n2. Độ phủ mẫu và trung vị đơn giá khác nhau thế nào giữa các địa bàn?\n3. Diện tích có quan hệ như thế nào với giá chào trong mẫu?\n\nMột dòng là một tin đăng; không chắc là một căn hộ duy nhất. Giá chào không phải giá giao dịch. Giữ tên địa bàn theo dữ liệu nguồn, chưa quy đổi địa giới hiện hành.\n\n## Kết quả được chạy lại\n\n| Chỉ số | Kết quả |\n|---|---:|\n| Số tin trong snapshot | 189 |\n| Số tin có giá/diện tích hợp lệ | 189 |\n| Dòng trùng hoàn toàn / mã tin lặp | 0 / 0 |\n| Ngày đăng thiếu | 189/189 |\n| Trung vị giá chào | 5,30 tỷ VND |\n| Trung vị đơn giá tính từ giá/diện tích | 70,00 triệu VND/m² |\n| Tương quan Spearman diện tích–giá chào | 0,755 |\n\nNhà Bè có 82 tin, Quận 2 có 56 tin và Quận 7 có 35 tin; mẫu tập trung vào một số địa bàn, vì vậy không thể xem số tin là thị phần hoặc đại diện toàn TP.HCM. Khác biệt trung vị giữa địa bàn chưa kiểm soát loại căn hộ, diện tích, dự án và thời điểm.\n\n### Phân bố giá\n\n![Giá chào và đơn giá trong mẫu](outputs/price_distributions.png)\n\nGiá chào có đuôi phải dài; báo cáo giữ nguyên các quan sát giá lớn, dùng trung vị thay vì tự động loại outlier. Giá lớn cần đối chiếu lại tin nguồn trước khi diễn giải sâu.\n\n### Độ phủ và so sánh địa bàn\n\n![Số tin và trung vị đơn giá theo địa bàn](outputs/district_comparison.png)\n\nBiểu đồ trung vị chỉ hiển thị nhóm có ít nhất 5 tin; các nhóm nhỏ vẫn xuất hiện trong bảng CSV. Trung vị đơn giá cao hơn không chứng minh căn hộ bị định giá cao hoặc khu vực là cơ hội đầu tư.\n\n### Diện tích và giá chào\n\n![Quan hệ diện tích và giá chào](outputs/area_vs_price.png)\n\nTương quan Spearman dương mô tả quan hệ thứ hạng trong mẫu, không cho phép kết luận nhân quả hay đánh giá độ chính xác của mô hình dự báo.\n\n## Phương pháp và kiểm tra\n\n- Kiểm tra schema, missingness, dòng trùng và mã tin lặp; không tự động xóa bản ghi.\n- Chỉ số giá sử dụng tin có giá và diện tích hữu hạn, lớn hơn 0. Bản nguồn vẫn được giữ nguyên; số dòng trước/sau được đối chiếu.\n- Tính lại đơn giá bằng `price_vnd / area_m2`; kiểm tra lệch hơn 1% so với trường đơn giá có sẵn.\n- Trung vị và tứ phân vị không trọng số theo tin; tổng số tin của các nhóm được đối chiếu với mẫu phân tích.\n- Không impute giá, không cắt outlier, không làm phân tích xu hướng vì thiếu ngày đăng.\n\n## Ý nghĩa và bước tiếp theo\n\nKết quả có thể dùng để lập danh sách kiểm tra tin và kế hoạch thu thập thêm ở các nhóm ít quan sát. Trước khi so sánh căn tương đồng, cần kiểm tra tin cùng căn/dự án, thời điểm và thuộc tính chất lượng. Cần dữ liệu giao dịch nếu muốn đánh giá giá bán thực tế. Chưa đo doanh thu, tiết kiệm thời gian, lợi nhuận hoặc hiệu quả môi giới.\n\n## Notebook ML bổ sung\n\nNotebook phân loại được sao chép nguyên trạng từ phiên bản portfolio có sẵn, có output lịch sử; **không chạy lại trong lần đóng gói notebook DA này**. Output đó ghi SVM RBF đạt 84,8% accuracy CV và 71,1% accuracy test, macro-F1 0,700 trên 38 tin. Không đồng nhất accuracy CV với test; mẫu test nhỏ và chưa phải kiểm định ngoài dự án/thời gian. Đây là phân loại phân khúc giá chào, không phải công cụ định giá giao dịch được thẩm định.\n\n## Chạy lại\n\n1. Clone/tải repository về máy.\n2. Có bản CSV được phép sử dụng, đặt tại `data/rever_apartments_clean_fetcher.csv`. CSV hiện được giữ tại `data/` theo trạng thái repository đã upload; xem [data/README.md](data/README.md).\n3. Dùng môi trường Python với các thư viện trong `requirements.txt`. Các phiên bản pin được ghi từ môi trường đã chạy; chưa kiểm thử cài mới ở máy khác.\n4. Mở `notebooks/01_rever_market_analysis.ipynb` bằng VS Code/Jupyter, chọn kernel của môi trường trên và **Restart Kernel → Run All**.\n\nNếu cần tạo môi trường riêng trên máy của bạn:\n\n```powershell\npython -m venv .venv\n.\\.venv\\Scripts\\python.exe -m pip install -r requirements.txt\n```\n\nĐây là lệnh cài đặt tùy chọn để bạn tự chạy; lần chuẩn bị portfolio không cài thêm package.\n\n**Xác minh ngày 16/10/2026:** toàn bộ cell code của notebook DA đã được thực thi tuần tự trong một namespace Python; bảng và ảnh được lưu vào notebook, cấu trúc được kiểm tra bằng nbformat. Đã xem trực tiếp ba PNG, kiểm tra nhãn và đơn vị. Chưa chạy bằng Jupyter kernel/nbclient và chưa kiểm tra giao diện render notebook trên GitHub; cần thực hiện Run All trong VS Code trước khi coi là bàn giao hoàn chỉnh. Notebook ML chỉ được xác thực cấu trúc và giữ output cũ.\n\n## Đóng góp và nguồn\n\nBài học phần Rever do Nguyễn Anh Khoa thực hiện, sử dụng AI hỗ trợ tối ưu. Bản notebook DA và tài liệu portfolio được tái cấu trúc với hỗ trợ AI. Tác giả cần tự đọc, chạy và giải thích toàn bộ kết luận khi phỏng vấn. Dữ liệu gốc từ Rever.vn; repository không tuyên bố liên kết chính thức với Rever hoặc quyền cấp phép lại nội dung tin đăng.\n\r\n"
+    },
+    {
+      "path": "data/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "content": "# Dữ liệu Rever\n\nCSV trong thư mục này là bản snapshot đã được tác giả upload công khai trước khi sắp xếp repository. Lần sửa cấu trúc giữ nguyên nội dung CSV, không bổ sung dữ liệu mới. Nguồn: tin đăng Rever.vn do tác giả thu thập; ngày thu thập chưa xác nhận. Một dòng là một tin đăng; giá là giá chào, không phải giá giao dịch. Xem `../docs/provenance.json` để đối chiếu SHA-256. Việc tác giả upload không tự xác lập quyền cấp phép lại nội dung nguồn.\n"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "content": ".venv/\n__pycache__/\n.ipynb_checkpoints/\n.env\n*.log\n*.synctex.gz\n"
+    }
+  ]
+}
